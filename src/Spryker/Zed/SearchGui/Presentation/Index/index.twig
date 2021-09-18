@@ -1,0 +1,33 @@
+{# @var searchConfiguration \Generated\Shared\Transfer\searchConfigurationTransfer #}
+{# @var searchAdapterConfiguration \Generated\Shared\Transfer\searchAdapterConfigurationTransfer #}
+
+{% extends '@Gui/Layout/layout.twig' %}
+
+{% block content %}
+    {% embed '@Gui/Partials/widget.twig' %}
+        {% block widget_title -%}
+            <h5>{{ 'Search Configuration' | trans }}</h5>
+        {%- endblock %}
+
+        {% block widget_content %}
+            <div class="row">
+                <div class="col-lg-12">
+                    {{ 'Your current adapter is' | trans }}
+
+                    {%- for searchAdapterConfiguration in searchConfiguration.searchAdapterConfigurations -%}
+                        {%- if searchAdapterConfiguration.isEnabled %}
+                            <div><b>- {{ searchAdapterConfiguration.name }}</b></div>
+                        {%- endif -%}
+                    {%- endfor -%}
+                </div>
+
+                <div class="col-lg-12">
+                    <hr>
+                    <a href="{{ searchConfigurationUrl }}" class="btn btn-create btn-outline btn-xs">
+                        <i class="fa"></i> {{ 'Edit Configuration' | trans }}
+                    </a>
+                </div>
+            </div>
+        {%- endblock %}
+    {% endembed %}
+{% endblock %}
