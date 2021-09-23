@@ -11,20 +11,20 @@
         "spryker/util-text": "^1.1.0"
     },
     "require-dev": {
-      "spryker/application": "*",
-      "spryker/availability": "*",
-      "spryker/code-sniffer": "*",
-      "spryker/container": "*",
-      "spryker/event-dispatcher": "*",
-      "spryker/form": "*",
-      "spryker/gui": "*",
-      "spryker/propel": "*",
-      "spryker/product": "*",
-      "spryker/router": "*",
-      "spryker/testify": "*",
-      "spryker/twig": "*",
-      "spryker/validator": "*",
-      "spryker/zed-navigation": "*"
+        "spryker/application": "*",
+        "spryker/availability": "*",
+        "spryker/code-sniffer": "*",
+        "spryker/container": "*",
+        "spryker/event-dispatcher": "*",
+        "spryker/form": "*",
+        "spryker/gui": "*",
+        "spryker/product": "*",
+        "spryker/propel": "*",
+        "spryker/router": "*",
+        "spryker/testify": "*",
+        "spryker/twig": "*",
+        "spryker/validator": "*",
+        "spryker/zed-navigation": "*"
     },
     "autoload": {
         "psr-4": {
